@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Speech Recognition App</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <h1>Speech Recognition App</h1>
+  <div class="container">
+    <select id="language-select">
+      <option value="en-US">English</option>
+      <option value="ru-RU">Russian</option>
+      <option value="tr-TR">Turkish</option>
+      <option value="az-AZ">Azerbaijani</option>
+    </select>
+    <div class="btns">
+      <button id="start-btn">
+        <span class="icon">
+          <i class="fa-solid fa-microphone"></i>
+        </span>
+      </button>
+      <button id="stop-btn"><i class="fa-solid fa-circle-stop"></i></button>
+    </div>
+    <p id="output-text"></p>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
