@@ -45,3 +45,16 @@ function createSpecipicPassword(arrayResult, num, str) {
         arrayResult.push(str[Math.ceil(Math.random() * num) - 1]);
     }
 }
+
+const copyContent = async () => {
+    let text = pwEl.innerHTML;
+    try {
+        await navigator.clipboard.writeText(text);
+        alert("copied")
+    } catch (err) {
+        console.error('Failed to copy: ', err);
+    }
+
+}
+copyEl.addEventListener("click", copyContent)
+
